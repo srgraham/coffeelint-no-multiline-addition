@@ -5,7 +5,8 @@ module.exports = class
     level: 'error'
     message: 'Line contains multiline addition. Swap to heredoc'
     description: '''
-      '''
+      Check for addition that uses multiple lines. Use something like heredocs instead.
+    '''
     
   tokens: ['+']
 

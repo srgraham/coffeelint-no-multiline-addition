@@ -7,7 +7,7 @@
       name: 'no_multiline_addition',
       level: 'error',
       message: 'Line contains multiline addition. Swap to heredoc',
-      description: '      '
+      description: 'Check for addition that uses multiple lines. Use something like heredocs instead.'
     };
 
     _Class.prototype.tokens = ['+'];
