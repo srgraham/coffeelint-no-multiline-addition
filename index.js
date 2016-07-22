@@ -7,13 +7,10 @@
       name: 'no_multiline_addition',
       level: 'error',
       message: 'Line contains multiline addition. Swap to heredoc',
-      regexList: [],
       description: '      '
     };
 
     _Class.prototype.tokens = ['+'];
-
-    _Class.prototype.prev_token = null;
 
     _Class.prototype.lintToken = function(token, token_api) {
       if (token.newLine) {
