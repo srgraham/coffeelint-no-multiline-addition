@@ -1,3 +1,4 @@
+
 module.exports = class
   rule:
     name: 'no_multiline_addition'
@@ -6,8 +7,11 @@ module.exports = class
     regexList: []
     description: '''
       '''
+    
+  tokens: ['+']
 
-  lintLine: (line, api) ->
-    re = /\+\s*$/g
-    if re.test(line)
+  prev_token: null
+
+  lintToken: (token, token_api) ->
+    if token.newLine
       return true

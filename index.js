@@ -11,10 +11,12 @@
       description: '      '
     };
 
-    _Class.prototype.lintLine = function(line, api) {
-      var re;
-      re = /\+\s*$/g;
-      if (re.test(line)) {
+    _Class.prototype.tokens = ['+'];
+
+    _Class.prototype.prev_token = null;
+
+    _Class.prototype.lintToken = function(token, token_api) {
+      if (token.newLine) {
         return true;
       }
     };
@@ -24,3 +26,5 @@
   })();
 
 }).call(this);
+
+//# sourceMappingURL=index.js.map

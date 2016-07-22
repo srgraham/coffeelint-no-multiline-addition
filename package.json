@@ -1,7 +1,7 @@
 {
   "name": "coffeelint-no-multiline-addition",
   "version": "1.0.0",
-  "description": "",
+  "description": "Check for addition that uses multiple lines. Use something like heredocs instead.",
   "main": "index.js",
   "keywords": [
     "coffeelint",
